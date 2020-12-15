@@ -1,0 +1,93 @@
+### 共同的理想主义者
+opinion_both_idealists = {
+	opinion = {
+		base = 100
+	}
+	trigger = {
+		OR = {
+			has_valid_civic = civic_story_messenger
+		}
+		from = { 
+			OR = {
+				has_valid_civic = civic_story_messenger
+			} 
+		}
+	}
+}
+
+### 罪恶的奴隶主
+opinion_sinful_slaveholders = {
+	opinion = {
+		base = -50
+	}
+	trigger = {
+		OR = {
+			has_valid_civic = civic_story_messenger
+		}
+		from = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			has_policy_flag = slavery_allowed
+			any_owned_pop_species = {
+				has_citizenship_type = { 
+					country = from
+					type = citizenship_slavery 
+				}
+			}
+		}
+	}
+}
+
+### 罪恶的反智慧生物罪犯
+opinion_sinful_antisapients = {
+	opinion = {
+		base = -100
+	}
+	trigger = {
+		OR = {
+			has_valid_civic = civic_story_messenger
+		}
+		from = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			has_policy_flag = purge_allowed
+			any_owned_pop_species = {
+				has_citizenship_type = { country = from type = citizenship_purge }
+			}
+		}
+	}
+}
+
+### 故事使者
+opinion_story_messenger = {
+	opinion = {
+		base = 20
+	}
+	trigger = {
+		has_valid_civic = civic_story_messenger
+		from = { 
+			NOT = {
+				has_valid_civic = civic_story_messenger
+			} 
+		}
+	}
+}
+
+### 带来了故事
+opinion_bring_stories = {
+	opinion = {
+		base = 20
+	}
+	trigger = {
+		from = { has_valid_civic = civic_story_messenger }
+		NOT = {
+			has_valid_civic = civic_story_messenger
+		}
+		NOT = {
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+}

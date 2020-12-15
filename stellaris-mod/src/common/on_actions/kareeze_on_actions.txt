@@ -1,0 +1,13 @@
+### 国家初始化，首都星球
+empire_init_capital_planet = {
+	events = {
+		kareeze_game_start.1
+	}
+}
+
+### 高级国家初始化
+on_initialize_advanced_colony = {
+	events = {
+		kareeze_game_start.2
+	}
+}
