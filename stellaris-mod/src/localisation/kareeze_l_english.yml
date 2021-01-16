@@ -120,11 +120,11 @@
  gov_story_committee:0 "Story Committee"
  gov_story_committee_desc:0 "This government is a materialistic and xenophilic form of democracy, where story creators and tellers lead their people to supervise the government apparatus by consultation for the development and inherit of its civilization."
  
- ### 国策
+ ### 公民性
  
  civic_story_messenger:0 "Story Messenger"
  civic_story_messenger_desc:0 "We have a mission, to blow stories and tales to everywhere of the universe, so that the sceneries shall be known, the miracles shall be acknowledged, and the past shall be remembered."
- civic_tooltip_story_messenger_effects:0 "£building£ §YCapital Buildings§! replace £job_administrator£ §Y$job_administrator$§! Jobs with £job_story_messenger£ §Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!, §Y$planet_entertainers$§!, §Y$planet_doctors$§! and §Y$planet_researchers$§! also produce §Y1§!£society_research£$society_research$ and §Y0.5§!£unity£$unity$"
+ civic_tooltip_story_messenger_effects:0 "£building£ §YCapital Buildings§! replace £job_administrator£ §Y$job_administrator$§! Jobs with £job_story_messenger£ §Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!, §Y$planet_entertainers$§!, §Y$planet_doctors$§!, §Y$planet_researchers$§!, etc also produce §Y1§!£society_research£$society_research$ and §Y0.5§!£unity£$unity$"
  
  federation_acceptance_story_messenger:0 "$civic_story_messenger$"
 
@@ -132,14 +132,14 @@
  
  opinion_both_idealists:0 "Both idealists"
  opinion_sinful_slaveholders:0 "Sinful Slaveholders"
- opinion_sinful_antisapients:0 "Sinful Anti-sapients"
+ opinion_sinful_anti_sapient:0 "Sinful Anti-Sapient"
  opinion_story_messenger:0 "Story messenger"
  opinion_bring_stories:0 "Bring stories"
  
  ### 个性
  
  personality_story_relaters:0 "Story relaters"
- personality_story_relaters_desc:0 "Story relaters think them own have a misson of spreading the light of stories, they are very pleasure to share stories and tales, whether in a narrow sense, or in a broad sense."
+ personality_story_relaters_desc:0 "Story relaters think them own have a mission of spreading the light of stories, they are very pleasure to share stories and tales, whether in a narrow sense, or in a broad sense."
  
  federation_acceptance_story_relaters:0 "$personality_story_relaters$"
  federation_acceptance_story_relaters_in_default_federation:0 "$personality_story_relaters$ + $default_federation$"

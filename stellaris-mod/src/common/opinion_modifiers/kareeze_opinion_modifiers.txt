@@ -1,7 +1,7 @@
-### 共同的理想主义者
+### 同道的理想主义者
 opinion_both_idealists = {
 	opinion = {
-		base = 100
+		base = 200
 	}
 	trigger = {
 		OR = {
@@ -18,28 +18,6 @@ opinion_both_idealists = {
 ### 罪恶的奴隶主
 opinion_sinful_slaveholders = {
 	opinion = {
-		base = -50
-	}
-	trigger = {
-		OR = {
-			has_valid_civic = civic_story_messenger
-		}
-		from = {
-			NOT = { has_ethic = ethic_gestalt_consciousness }
-			has_policy_flag = slavery_allowed
-			any_owned_pop_species = {
-				has_citizenship_type = { 
-					country = from
-					type = citizenship_slavery 
-				}
-			}
-		}
-	}
-}
-
-### 罪恶的反智慧生物罪犯
-opinion_sinful_antisapients = {
-	opinion = {
 		base = -100
 	}
 	trigger = {
@@ -48,10 +26,23 @@ opinion_sinful_antisapients = {
 		}
 		from = {
 			NOT = { has_ethic = ethic_gestalt_consciousness }
+			has_policy_flag = slavery_allowed
+		}
+	}
+}
+
+### 罪恶的反智慧生物罪犯
+opinion_sinful_anti_sapient = {
+	opinion = {
+		base = -200
+	}
+	trigger = {
+		OR = {
+			has_valid_civic = civic_story_messenger
+		}
+		from = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
 			has_policy_flag = purge_allowed
-			any_owned_pop_species = {
-				has_citizenship_type = { country = from type = citizenship_purge }
-			}
 		}
 	}
 }

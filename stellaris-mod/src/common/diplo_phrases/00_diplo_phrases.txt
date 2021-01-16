@@ -2,8 +2,6 @@
 # FROM is the actor ie the initiator of the diplomatic action
 # ROOT is the recipient of the diplomatic action
 
-# TODO
-
 greetings = {
 	### HOSTILE GREETINGS
 
@@ -19478,7 +19476,7 @@ action_invite_to_federation = {
 	#		}
 	#	}
 	#}
-}#
+}
 
 action_ask_to_join_federation = {
 	consider = {

@@ -8,15 +8,13 @@ diplomatic_stance = {
 			is_country_type = awakened_marauders
 		}
 	}
-
 	allow = {
 		is_at_war = no # Not allowed to change policies in this group while at war
 	}
-
+	
 	option = {
 		name = "diplo_stance_belligerent"
 		icon = "GFX_diplomatic_stance_belligerent"
-
 		potential = {
 			OR = {
 				is_country_type = default
@@ -24,30 +22,27 @@ diplomatic_stance = {
 			}
 			is_homicidal = no # They have their own variants of this
 			NOT = { has_valid_civic = civic_inwards_perfection }
-			# 理想主义者不应该恃强凌弱
+		}
+		valid = {
+			# 理想主义者不能恃强凌弱
 			NOR = {
-				has_valid_civic = civic_story_messenger 
+				has_valid_civic = civic_story_messenger
 			}
 		}
-
 		policy_flags = {
 			diplo_stance_belligerent
 		}
-
 		modifier = {
 			country_war_exhaustion_mult = -0.1
 			country_naval_cap_mult = 0.1
 			country_claim_influence_cost_mult = -0.1
 		}
-
 		ai_weight = {
 			weight = 10
-			
 			modifier = {
 				factor = 0
 				NOT = { has_country_flag = has_encountered_other_empire }
 			}
-
 			# Pacifists
 			modifier = { # Fanatic Pacifists will *only* go belligerent if there's a rival neighbor...
 				factor = 0
@@ -71,7 +66,6 @@ diplomatic_stance = {
 				factor = 0.5 # ...but they're still less likely to.
 				is_pacifist = yes
 			}
-
 			# Angry people like to be belligerent
 			modifier = {
 				factor = 2.0
@@ -106,7 +100,6 @@ diplomatic_stance = {
 					has_valid_civic = civic_warrior_culture
 				}
 			}
-
 			modifier = {
 				factor = 1.5
 				has_ai_personality_behaviour = conqueror
@@ -115,7 +108,6 @@ diplomatic_stance = {
 				factor = 1.5
 				has_ai_personality_behaviour = subjugator
 			}
-
 			modifier = {
 				factor = 3.0 # Blocked in propagators get ANGRY
 				has_ai_expansion_plan = no
@@ -123,7 +115,7 @@ diplomatic_stance = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = "diplo_stance_cooperative"
 		icon = "GFX_diplomatic_stance_cooperative"
@@ -233,6 +225,13 @@ diplomatic_stance = {
 			is_megacorp = no  # "NO! YOU CAN'T BUY OUR STUFF!" makes the shareholders sad
 		}
 
+		valid = {
+			# 理想主义者不能孤立主义
+			NOR = {
+				has_valid_civic = civic_story_messenger
+			}
+		}
+		
 		policy_flags = {
 			diplo_stance_isolationist
 		}
@@ -376,10 +375,6 @@ diplomatic_stance = {
 				is_country_type = default
 			}
 			NOT = { has_valid_civic = civic_inwards_perfection }
-			# 理想主义者不应该霸权主义
-			NOR = {
-				has_valid_civic = civic_story_messenger 
-			}
 		}
 
 		valid = {
@@ -390,6 +385,10 @@ diplomatic_stance = {
 				NOT = { is_country_type = default }
 			}
 			is_subject = no
+			# 理想主义者不能霸权主义
+			NOR = {
+				has_valid_civic = civic_story_messenger
+			}
 		}
 
 		policy_flags = {
@@ -609,14 +608,14 @@ enlightenment = {
 
 	option = {
 		name = "enlightenment_not_allowed"
-
-		potential = {
+		
+		valid = {
 			# 理想主义者总是乐于启蒙
 			NOT = {
-				has_valid_civic = civic_story_messenger 
+				has_valid_civic = civic_story_messenger
 			}
 		}
-
+		
 		policy_flags = {
 			enlightenment_not_allowed
 		}
@@ -700,14 +699,7 @@ first_contact_protocol = {
 			first_contact_attack_allowed
 		}
 		modifier = {}
-
-		potential = {
-			# 理想主义者不应该敌意接触
-			NOT = {
-				has_valid_civic = civic_story_messenger 
-			}
-		}
-
+		
 		valid = {
 			OR = {
 				has_ethic = ethic_gestalt_consciousness
@@ -721,6 +713,10 @@ first_contact_protocol = {
 				has_ethic = ethic_pacifist
 				has_ethic = ethic_fanatic_pacifist
 				has_valid_civic = civic_mutualistic_behavior
+			}
+			# 理想主义者不能敌意接触
+			NOT = {
+				has_valid_civic = civic_story_messenger
 			}
 		}
 
@@ -740,96 +736,6 @@ first_contact_protocol = {
 					has_ethic = "ethic_fanatic_xenophobe"
 				}
 			}
-		}
-	}
-}
-
-food_policy = {
-	potential = {
-		always = yes
-	}
-
-	option = {
-		name = "food_policy_rationing"
-
-		modifier = {
-			planet_pops_organics_food_upkeep_mult = -0.25
-			planet_pops_organics_minerals_upkeep_mult = -0.25
-			pop_growth_speed = -0.1
-			biological_pop_happiness = -0.1
-			lithoid_pop_happiness = -0.1
-		}
-
-		AI_weight = {
-			factor = 0
-		}
-	}
-
-	option = {
-		name = "food_policy_normal"
-
-		modifier = {}
-
-		AI_weight = {
-			factor = 1
-		}
-	}
-
-	option = {
-		name = "food_policy_generous"
-
-		modifier = {
-			planet_pops_organics_food_upkeep_mult = 0.25
-			planet_pops_organics_minerals_upkeep_mult = 0.25
-			biological_pop_happiness = 0.05
-			lithoid_pop_happiness = 0.05
-			pop_growth_speed = 0.10
-		}
-
-		AI_weight = {
-			factor = 0
-		}
-	}
-}
-
-food_policy_gestalt = {
-	potential = {
-		always = yes
-	}
-
-	option = {
-		name = "food_policy_gestalt_rationing"
-
-		modifier = {
-			planet_pops_organics_food_upkeep_mult = -0.25
-			pop_growth_speed = -0.15
-		}
-
-		AI_weight = {
-			factor = 0
-		}
-	}
-
-	option = {
-		name = "food_policy_gestalt_normal"
-
-		modifier = {}
-
-		AI_weight = {
-			factor = 1
-		}
-	}
-
-	option = {
-		name = "food_policy_gestalt_generous"
-
-		modifier = {
-			planet_pops_organics_food_upkeep_mult = 0.5
-			pop_growth_speed = 0.33
-		}
-
-		AI_weight = {
-			factor = 0
 		}
 	}
 }
@@ -855,7 +761,6 @@ pre_sapients = {
 				has_valid_civic = civic_hive_devouring_swarm
 				has_valid_civic = civic_fanatic_purifiers
 			}
-		}
 		}
 
 		on_enabled = {
@@ -912,10 +817,6 @@ pre_sapients = {
 			NOT = {
 				has_valid_civic = civic_fanatic_purifiers
 			}
-			# 理想主义者总是友好对待亚智慧生物
-			NOT = {
-				has_valid_civic = civic_story_messenger 
-			}
 		}
 
 		on_enabled = {
@@ -928,6 +829,10 @@ pre_sapients = {
 			NOR = {
 				has_ethic = "ethic_xenophile"
 				has_ethic = "ethic_fanatic_xenophile"
+			}
+			# 理想主义者总是友好对待亚智慧生物
+			NOT = {
+				has_valid_civic = civic_story_messenger
 			}
 		}
 
@@ -948,18 +853,15 @@ pre_sapients = {
 
 	option = {
 		name = "pre_sapients_purge"
-
-		potential = {
-			# 理想主义者总是友好对待亚智慧生物
-			NOT = {
-				has_valid_civic = civic_story_messenger 
-			}
-		}
 		
 		valid = {
 			NOR = {
 				has_ethic = "ethic_xenophile"
 				has_ethic = "ethic_fanatic_xenophile"
+			}
+			# 理想主义者总是友好对待亚智慧生物
+			NOT = {
+				has_valid_civic = civic_story_messenger
 			}
 		}
 
@@ -1026,14 +928,7 @@ slavery = {
 
 	option = {
 		name = "slavery_allowed"
-
-		potential = {
-			# 理想主义者不允许奴隶制
-			NOT = {
-				has_valid_civic = civic_story_messenger
-			}
-		}
-
+		
 		valid = {
 			NOT = { is_subject_type = signatory }
 			OR = {
@@ -1041,6 +936,10 @@ slavery = {
 				has_ethic = ethic_fanatic_authoritarian
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe
+			}
+			# 理想主义者不允许奴隶制
+			NOT = {
+				has_valid_civic = civic_story_messenger
 			}
 		}
 
@@ -1150,14 +1049,7 @@ purge = {
 			purge_allowed
 		}
 		modifier = {}
-
-		potential = {
-			# 理想主义者不允许肃清
-			NOT = {
-				has_valid_civic = civic_story_messenger
-			}
-		}
-
+		
 		valid = {
 			NOT = { is_subject_type = signatory }
 			OR = {
@@ -1166,6 +1058,10 @@ purge = {
 				has_ethic = ethic_fanatic_xenophobe
 			}
 			NOT = {  has_valid_civic = civic_mutualistic_behavior }
+			# 理想主义者不允许肃清
+			NOT = {
+				has_valid_civic = civic_story_messenger
+			}
 		}
 
 		AI_weight = {

@@ -1,5 +1,4 @@
 ﻿l_simp_chinese:
- 
  ### 其他
  
  name_list_WINDKID:0 "风之子"
@@ -66,8 +65,7 @@
  WINDKID_ROBOT_organ:0 "胃"
  WINDKID_ROBOT_mouth:0 "口"
  WINDKID_ROBOT_hand:0 "手"
- 
- 
+
  ### 种族
  
  Windkid:0 "风之子"
@@ -116,25 +114,25 @@
  
  ### 政府
  
- gov_story_directorate:0 "故事理事会"
- gov_story_directorate_desc:0 "一种物质主义和亲外主义的寡头政府，由故事创作者和讲述者构成的理事会为了文明的发展和传承治理国家。"
- 
  gov_story_committee:0 "故事委员会"
  gov_story_committee_desc:0 "一种物质主义和亲外主义的民主政府，为了文明的发展和传承，故事创作者和讲述者领导民众协商治理国家。"
- 
- ### 国策
+
+ gov_story_directorate:0 "故事理事会"
+ gov_story_directorate_desc:0 "一种物质主义和亲外主义的寡头政府，由故事创作者和讲述者构成的理事会为了文明的发展和传承治理国家。"
+
+ ### 公民性
  
  civic_story_messenger:0 "故事使者"
  civic_story_messenger_desc:0 "我们负有使命——将故事和传说带给宇宙的各个角落，让那些风景为人所知晓，让那些奇迹为人所知悉，让那些过往为人所铭记。"
- civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_doctors$§!和§Y$planet_researchers$§!会产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
+ civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_researchers$§!等额外产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
  
  federation_acceptance_story_messenger:0 "$civic_story_messenger$"
 
  ### 外交修饰符
  
- opinion_both_idealists:0 "共同的理想主义者"
+ opinion_both_idealists:0 "同道的理想主义者"
  opinion_sinful_slaveholders:0 "罪恶的奴隶主"
- opinion_sinful_antisapients:0 "罪恶的反智慧生物罪犯"
+ opinion_sinful_anti_sapient:0 "罪恶的反智慧生物罪犯"
  opinion_story_messenger:0 "故事使者"
  opinion_bring_stories:0 "带来了故事"
 
@@ -149,6 +147,7 @@
  
  # 问候语
  
+ # TODO
  SR_HOSTILE_GREETING_01:0 "你们的价值观和选择完全不合逻辑，我们也根本无法展开有建设性的谈话。"
  SR_HOSTILE_GREETING_02:0 "由于[From.Capital.GetName]的进化环境，[From.GetSpeciesAdj]的大脑只是不够发达罢了。这是科学。看开点。"
  SR_HOSTILE_GREETING_03:0 "你们凭空捏造出信仰来填补空洞的心灵，你们永远无法体会到智力获得启蒙带来的真正欢愉。"
