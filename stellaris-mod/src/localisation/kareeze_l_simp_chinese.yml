@@ -124,7 +124,7 @@
  
  civic_story_messenger:0 "故事使者"
  civic_story_messenger_desc:0 "我们负有使命——将故事和传说带给宇宙的各个角落，让那些风景为人所知晓，让那些奇迹为人所知悉，让那些过往为人所铭记。"
- civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_researchers$§!等额外产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
+ civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_researchers$§!等也会产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
  
  federation_acceptance_story_messenger:0 "$civic_story_messenger$"
 
