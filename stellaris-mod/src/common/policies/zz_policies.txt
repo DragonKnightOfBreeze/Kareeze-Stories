@@ -26,6 +26,7 @@ diplomatic_stance = {
 		valid = {
 			# 理想主义者不能恃强凌弱
 			NOR = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -228,6 +229,7 @@ diplomatic_stance = {
 		valid = {
 			# 理想主义者不能孤立主义
 			NOR = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -387,6 +389,7 @@ diplomatic_stance = {
 			is_subject = no
 			# 理想主义者不能霸权主义
 			NOR = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -612,6 +615,7 @@ enlightenment = {
 		valid = {
 			# 理想主义者总是乐于启蒙
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -716,6 +720,7 @@ first_contact_protocol = {
 			}
 			# 理想主义者不能敌意接触
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -832,6 +837,7 @@ pre_sapients = {
 			}
 			# 理想主义者总是友好对待亚智慧生物
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -861,6 +867,7 @@ pre_sapients = {
 			}
 			# 理想主义者总是友好对待亚智慧生物
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -939,6 +946,7 @@ slavery = {
 			}
 			# 理想主义者不允许奴隶制
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}
@@ -1060,6 +1068,7 @@ purge = {
 			NOT = {  has_valid_civic = civic_mutualistic_behavior }
 			# 理想主义者不允许肃清
 			NOT = {
+				has_valid_civic = civic_scientific_belief
 				has_valid_civic = civic_story_messenger
 			}
 		}

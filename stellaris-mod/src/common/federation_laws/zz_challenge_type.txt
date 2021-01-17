@@ -45,6 +45,11 @@ challenge_type_thesis = {
 			has_ai_personality = erudite_explorers
 		}
 		modifier = {
+			desc = federation_acceptance_science_forwarders
+			add = 26
+			has_ai_personality = story_relaters
+		}
+		modifier = {
 			desc = federation_acceptance_story_relaters
 			add = 26
 			has_ai_personality = story_relaters
@@ -56,7 +61,11 @@ challenge_type_thesis = {
 			add = 50
 			has_civic = civic_technocracy
 		}
-		# 故事使者会欢迎
+		modifier = {
+			desc = federation_acceptance_scientific_belief
+			add = 50
+			has_civic = civic_story_messenger
+		}
 		modifier = {
 			desc = federation_acceptance_story_messenger
 			add = 50

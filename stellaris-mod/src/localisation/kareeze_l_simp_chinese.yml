@@ -104,6 +104,14 @@
  
  ### 职业
  
+ job_science_messenger:0 "科学使者"
+ job_science_messenger_plural:0 "科学使者"
+ job_science_messenger_desc:0 "科学是一种认识宇宙的实践方法，更是一种值得为之奋斗终生的信仰。"
+ job_science_messenger_effect_desc:0 "£job_science_messenger£$job_science_messenger_plural$产出£mod_planet_amenities_add£§Y$PLANET_AMENITIES_TITLE$§!、用于研发新科技的£physics£ £society£ £engineering£§Y研究点数§!和£unity£§Y$unity$§!"
+ mod_job_science_messenger_add:0 "$job_science_messenger$职位"
+ mod_job_science_messenger_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_science_messenger$职位"
+ mod_job_science_messenger_per_pop_short:0 "\n每$VALUE$£pop£§G+1§!£mod_job_science_messenger_add£"
+
  job_story_messenger:0 "故事使者"
  job_story_messenger_plural:0 "故事使者"
  job_story_messenger_desc:0 "故事和传说将互不相关的个体们凝聚为想象中的共同体，传承、记录和引导它的过去、现在和未来。"
@@ -114,6 +122,12 @@
  
  ### 政府
  
+ gov_science_forward_committee:0 "科学传播委员会"
+ gov_science_forward_desc:0 "一种物质主义和军国主义的民主政府，为了发展文明和传播科学精神，科学事业工作者带领民众协商治理国家。"
+ 
+ gov_science_directorate:0 "科学传播理事会"
+ gov_science_directorate_desc:0 "一种物质主义和军国主义的寡头政府，由科学事业工作者构成的理事会为了发展文明和传播科学精神治理国家。"
+
  gov_story_committee:0 "故事委员会"
  gov_story_committee_desc:0 "一种物质主义和亲外主义的民主政府，为了文明的发展和传承，故事创作者和讲述者领导民众协商治理国家。"
 
@@ -122,32 +136,64 @@
 
  ### 公民性
  
+ civic_scientific_belief:0 "科学信仰"
+ civic_scientific_belief_desc:0 "也许是先天使然，亦或是后天的邂逅，此文明最终发展出了一个尤为崇尚且乐于传递科学精神的社会。"
+ civic_tooltip_scientific_belief_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_science_messenger£§Y$job_science_messenger_plural$§!\n§Y$planet_researchers$§!会产出§Y1§!£unity£$unity$"
+
  civic_story_messenger:0 "故事使者"
  civic_story_messenger_desc:0 "我们负有使命——将故事和传说带给宇宙的各个角落，让那些风景为人所知晓，让那些奇迹为人所知悉，让那些过往为人所铭记。"
- civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_researchers$§!等也会产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
- 
+ civic_tooltip_story_messenger_effects:0 "£building£§Y首府建筑§!取代£job_administrator£§Y$job_administrator$§!职位为£job_story_messenger£§Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!、§Y$planet_entertainers$§!、§Y$planet_researchers$§!等会产出§Y1§!£society_research£$society_research$和§Y0.5§!£unity£$unity$"
+
+ federation_acceptance_scientific_belief:0 "$civic_scientific_belief$"
  federation_acceptance_story_messenger:0 "$civic_story_messenger$"
+
+ civic_tooltip_idealist:0 "是理想主义者"
 
  ### 外交修饰符
  
  opinion_both_idealists:0 "同道的理想主义者"
  opinion_sinful_slaveholders:0 "罪恶的奴隶主"
  opinion_sinful_anti_sapient:0 "罪恶的反智慧生物罪犯"
+ opinion_science_believer:0 "科学信徒"
  opinion_story_messenger:0 "故事使者"
  opinion_bring_stories:0 "带来了故事"
 
  ### 个性
  
+ personality_science_forwarders:0 "科学传道者"
+ personality_science_forwarders_desc:0 "科学传道者将传播科学精神视为文明发展之外的第二要务，他们会不惜一切代价向其他文明传递唯物主义观。"
+
  personality_story_relaters:0 "故事传述者"
  personality_story_relaters_desc:0 "故事传述者认为自身肩负播洒故事之光的使命，他们非常乐于与他人分享故事和传说——无论是狭义上的，还是广义上的。"
- 
+
+ federation_acceptance_science_forwarders:0 "$personality_science_forwarders$"
+ federation_acceptance_science_forwarders_in_research_federation:0 "$personality_science_forwarders$ + $research_federation$"
+
  federation_acceptance_story_relaters:0 "$personality_story_relaters$"
  federation_acceptance_story_relaters_in_default_federation:0 "$personality_story_relaters$ + $default_federation$"
  federation_acceptance_story_relaters_in_research_federation:0 "$personality_story_relaters$ + $research_federation$"
- 
+
+
  # 问候语
- 
  # TODO
+ 
+ SF_HOSTILE_GREETING_01:0 "你们的价值观和选择完全不合逻辑，我们也根本无法展开有建设性的谈话。"
+ SF_HOSTILE_GREETING_02:0 "由于[From.Capital.GetName]的进化环境，[From.GetSpeciesAdj]的大脑只是不够发达罢了。这是科学。看开点。"
+ SF_HOSTILE_GREETING_03:0 "你们凭空捏造出信仰来填补空洞的心灵，你们永远无法体会到智力获得启蒙带来的真正欢愉。"
+ SF_HOSTILE_GREETING_04:0 "你们无法内省自己的思想，这是头脑简单的动物社会具有的标志。你们毫无值得学习之处。"
+ SF_DOMINEERING_GREETING_01:0 "你们的文明止步不前，是因为你们内部文化拒绝进步。这是铁一般事实。"
+ SF_NEUTRAL_GREETING_01:0 "你们好，[From.GetSpeciesName]。你们带着问题来的，还是答案？"
+ SF_NEUTRAL_GREETING_02:0 "我们的目标不是力量而是知识，尽管有些时候两者是一回事。"
+ SF_NEUTRAL_GREETING_03:0 "当你们听说你们的信仰相当不合理性可能会感到震惊。但如果你们想与我们交流的话，最好学会面对残酷的现实吧。"
+ SF_THREATENED_GREETING_01:0 "不管你们接下来有什么计划，都请记住我们对你们没有威胁。我们满足于探索新领域，而不是去挑战你们。"
+ SF_FRIENDLY_GREETING_01:0 "我们通力合作，定能揭开这个星系的奥秘。"
+ SF_FRIENDLY_GREETING_02:0 "[From.GetSpeciesAdj]的头脑和[Root.GetSpeciesAdj]的头脑可谓是互相补足。我们联合起来的智慧成就肯定比分开的要大。"
+ SF_FRIENDLY_GREETING_03:0 "能够见到其他心怀好奇又聪慧的物种，甚感欣慰。有太多人情愿让奥秘掩埋在无尽的深空中。"
+ SF_FRIENDLY_GREETING_04:0 "[Root.GetAllianceName]的发现可谓代表了智能生物所能触碰到的终极前沿。"
+ SF_WAR_GREETING_01:0 "拥有关于[From.GetHomeWorldName]是如何掩埋在废墟中的详尽记录能为我们的考古学家省去大量麻烦。"
+ SF_WAR_GREETING_02:0 "我们做出选择的武器是智慧，并由理智和理性砥砺。你们觉得自己还有机会吗，[From.GetSpeciesNamePlural]？"
+ SF_WAR_GREETING_03:0 "不管你们想象中会有哪路大神来帮你们赢得这场战争，就敬请祈祷吧。合十的双手可是握不住武器的。"
+
  SR_HOSTILE_GREETING_01:0 "你们的价值观和选择完全不合逻辑，我们也根本无法展开有建设性的谈话。"
  SR_HOSTILE_GREETING_02:0 "由于[From.Capital.GetName]的进化环境，[From.GetSpeciesAdj]的大脑只是不够发达罢了。这是科学。看开点。"
  SR_HOSTILE_GREETING_03:0 "你们凭空捏造出信仰来填补空洞的心灵，你们永远无法体会到智力获得启蒙带来的真正欢愉。"

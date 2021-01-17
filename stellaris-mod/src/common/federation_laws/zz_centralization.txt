@@ -105,30 +105,6 @@ centralization_low = {
 				}
 			}
 		}
-		# 星系联盟中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_default_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = default_federation
-					has_federation_law = centralization_minimal
-				}
-			}
-		}
-		# 研究合作社中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_research_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = research_federation
-					has_federation_law = centralization_minimal
-				}
-			}
-		}
 		modifier = {
 			desc = federation_acceptance_honorbound_warriors_in_military_federation
 			add = 20
@@ -158,6 +134,42 @@ centralization_low = {
 				has_ai_personality = peaceful_traders
 				federation = {
 					has_federation_type = trade_federation
+					has_federation_law = centralization_minimal
+				}
+			}
+		}
+		# 研究合作社中的科学传道者
+		modifier = {
+			desc = federation_acceptance_science_forwarders_in_research_federation
+			add = 10
+			AND = {
+				has_ai_personality = science_forwarders
+				federation = {
+					has_federation_type = research_federation
+					has_federation_law = centralization_minimal
+				}
+			}
+		}
+		# 星系联盟中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_default_federation
+			add = 20
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = default_federation
+					has_federation_law = centralization_minimal
+				}
+			}
+		}
+		# 研究合作社中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_research_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = research_federation
 					has_federation_law = centralization_minimal
 				}
 			}
@@ -321,30 +333,6 @@ centralization_medium = {
 				}
 			}
 		}
-		# 星系联盟中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_default_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = default_federation
-					has_federation_law = centralization_low
-				}
-			}
-		}
-		# 研究合作社中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_research_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = research_federation
-					has_federation_law = centralization_low
-				}
-			}
-		}
 		modifier = {
 			desc = federation_acceptance_honorbound_warriors_in_military_federation
 			add = 20
@@ -374,6 +362,42 @@ centralization_medium = {
 				has_ai_personality = peaceful_traders
 				federation = {
 					has_federation_type = trade_federation
+					has_federation_law = centralization_low
+				}
+			}
+		}
+		# 研究合作社中的科学传道者
+		modifier = {
+			desc = federation_acceptance_science_forwarders_in_research_federation
+			add = 20
+			AND = {
+				has_ai_personality = science_forwarders
+				federation = {
+					has_federation_type = research_federation
+					has_federation_law = centralization_low
+				}
+			}
+		}
+		# 星系联盟中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_default_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = default_federation
+					has_federation_law = centralization_low
+				}
+			}
+		}
+		# 研究合作社中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_research_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = research_federation
 					has_federation_law = centralization_low
 				}
 			}
@@ -544,30 +568,6 @@ centralization_high = {
 				}
 			}
 		}
-		# 星系联盟中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_default_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = default_federation
-					has_federation_law = centralization_medium
-				}
-			}
-		}
-		# 研究合作社中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_research_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = research_federation
-					has_federation_law = centralization_medium
-				}
-			}
-		}
 		modifier = {
 			desc = federation_acceptance_honorbound_warriors_in_military_federation
 			add = 20
@@ -597,6 +597,42 @@ centralization_high = {
 				has_ai_personality = peaceful_traders
 				federation = {
 					has_federation_type = trade_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 研究合作社中的科学传道者
+		modifier = {
+			desc = federation_acceptance_science_forwarders_in_research_federation
+			add = 20
+			AND = {
+				has_ai_personality = science_forwarders
+				federation = {
+					has_federation_type = research_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 星系联盟中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_default_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = default_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 研究合作社中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_research_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = research_federation
 					has_federation_law = centralization_medium
 				}
 			}
@@ -755,30 +791,6 @@ centralization_very_high = {
 				}
 			}
 		}
-		# 星系联盟中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_default_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = default_federation
-					has_federation_law = centralization_medium
-				}
-			}
-		}
-		# 研究合作社中的故事传述者
-		modifier = {
-			desc = federation_acceptance_story_relaters_in_research_federation
-			add = 10
-			AND = {
-				has_ai_personality = story_relaters
-				federation = {
-					has_federation_type = research_federation
-					has_federation_law = centralization_medium
-				}
-			}
-		}
 		modifier = {
 			desc = federation_acceptance_honorbound_warriors_in_military_federation
 			add = 20
@@ -808,6 +820,42 @@ centralization_very_high = {
 				has_ai_personality = peaceful_traders
 				federation = {
 					has_federation_type = trade_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 研究合作社中的科学传道者
+		modifier = {
+			desc = federation_acceptance_science_forwarders_in_research_federation
+			add = 20
+			AND = {
+				has_ai_personality = science_forwarders
+				federation = {
+					has_federation_type = research_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 星系联盟中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_default_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = default_federation
+					has_federation_law = centralization_medium
+				}
+			}
+		}
+		# 研究合作社中的故事传述者
+		modifier = {
+			desc = federation_acceptance_story_relaters_in_research_federation
+			add = 10
+			AND = {
+				has_ai_personality = story_relaters
+				federation = {
+					has_federation_type = research_federation
 					has_federation_law = centralization_medium
 				}
 			}

@@ -139,6 +139,13 @@ researcher = {
 		produces = {
 			trigger = {
 				exists = owner
+				owner = { has_valid_civic = civic_scientific_belief }
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_story_messenger }
 			}
 			society_research = 1
@@ -417,6 +424,16 @@ priest = {
 			factor = 1.5
 			has_trait = trait_necrophage
 		}
+		# 理想主义者拒绝唯心论
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				OR = {
+					has_civic = civic_story_messenger
+				}
+			}
+		}
 	}
 }
 
@@ -584,6 +601,16 @@ death_priest = {
 		modifier = {
 			factor = 1.5
 			has_trait = trait_necrophage
+		}
+		# 理想主义者拒绝唯心论
+		modifier = {
+			factor = 0.5
+			exists = owner
+			owner = {
+				OR = {
+					has_civic = civic_story_messenger
+				}
+			}
 		}
 	}
 }

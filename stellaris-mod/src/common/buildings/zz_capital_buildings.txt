@@ -80,6 +80,7 @@ building_capital = {
 					has_civic = civic_aristocratic_elite
 					has_civic = civic_merchant_guilds
 					has_civic = civic_technocracy
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -127,6 +128,17 @@ building_capital = {
 		modifier = {
 			job_head_researcher_add = 1
 			job_administrator_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		modifier = {
+			job_science_messenger_add = 2
 		}
 	}
 	triggered_planet_modifier = {
@@ -192,6 +204,15 @@ building_capital = {
 		trigger = {
 			exists = owner
 			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
 				has_civic = civic_story_messenger
 			}
 		}
@@ -212,6 +233,7 @@ building_capital = {
 			owner = {
 				NOR = { 
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -325,6 +347,7 @@ building_major_capital = {
 					has_civic = civic_aristocratic_elite
 					has_civic = civic_merchant_guilds
 					has_civic = civic_technocracy
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -378,6 +401,17 @@ building_major_capital = {
 		potential = {
 			exists = owner
 			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		modifier = {
+			job_science_messenger_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_civic = civic_story_messenger
 			}
 		}
@@ -405,13 +439,25 @@ building_major_capital = {
 			energy = @b3_upkeep
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
+				}
+			}
+		}
+		text = job_administrator_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				NOR = {
+					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -444,6 +490,15 @@ building_major_capital = {
 			}
 		}
 		text = job_head_researcher_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
@@ -574,6 +629,7 @@ building_system_capital = {
 					has_civic = civic_aristocratic_elite
 					has_civic = civic_merchant_guilds
 					has_civic = civic_technocracy
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -627,6 +683,17 @@ building_system_capital = {
 		potential = {
 			exists = owner
 			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		modifier = {
+			job_science_messenger_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_civic = civic_story_messenger
 			}
 		}
@@ -661,6 +728,7 @@ building_system_capital = {
 			owner = {
 				NOR = { 
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -693,6 +761,15 @@ building_system_capital = {
 			}
 		}
 		text = job_head_researcher_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
@@ -802,12 +879,22 @@ building_hab_capital = {
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 				is_regular_empire = yes
 			}
 		}
 		job_administrator_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_civic = civic_scientific_belief }
+		}
+		modifier = {
+			job_science_messenger_add = 1
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -869,12 +956,22 @@ building_hab_capital = {
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 				is_regular_empire = yes
 			}
 		}
 		text = job_administrator_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
@@ -1024,6 +1121,7 @@ building_hab_major_capital = {
 					has_civic = civic_aristocratic_elite
 					has_civic = civic_merchant_guilds
 					has_civic = civic_technocracy
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
@@ -1076,6 +1174,15 @@ building_hab_major_capital = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = { has_civic = civic_scientific_belief }
+		}
+		modifier = {
+			job_science_messenger_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { has_civic = civic_story_messenger }
 		}
 		modifier = {
@@ -1112,13 +1219,13 @@ building_hab_major_capital = {
 			planet_housing_add = 1
 		}
 	}
-	
 	triggered_desc = {
 		trigger = {
 			exists = owner
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 				is_regular_empire = yes
@@ -1161,6 +1268,15 @@ building_hab_major_capital = {
 			}
 		}
 		text = job_head_researcher_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
@@ -1290,11 +1406,23 @@ building_resort_capital = {
 			owner = {
 				NOR = { 
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
 		}
 		job_administrator_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		modifier = {
+			job_science_messenger_add = 1
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1334,11 +1462,21 @@ building_resort_capital = {
 			owner = {
 				NOR = { 
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
 		}
 		text = job_administrator_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
@@ -1446,12 +1584,24 @@ building_resort_major_capital = {
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
 		}
 		modifier = {
 			job_administrator_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		modifier = {
+			job_science_messenger_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -1492,11 +1642,21 @@ building_resort_major_capital = {
 			owner = {
 				NOR = {
 					has_authority = auth_corporate
+					has_civic = civic_scientific_belief
 					has_civic = civic_story_messenger
 				}
 			}
 		}
 		text = job_administrator_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_scientific_belief
+			}
+		}
+		text = job_science_messenger_effect_desc
 	}
 	triggered_desc = {
 		trigger = {

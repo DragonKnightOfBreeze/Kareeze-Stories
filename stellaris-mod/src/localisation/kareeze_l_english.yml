@@ -104,48 +104,95 @@
  
  ### 职业
  
+ job_science_messenger:0 "Science Messenger"
+ job_science_messenger_plural:0 "Science Messengers"
+ job_science_messenger_desc:0 "Science is a practical method of understanding the universe, and in the higher level, it is also a life-long faith worth fighting for."
+ job_science_messenger_effect_desc:0 "£job_science_messenger£ $job_science_messenger_plural$ produce £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, £physics£ £society£ £engineering£ §YResearch Points§! for new technologies and £unity£ §Y$unity$§!"
+ mod_job_science_messenger_add:0 "$job_science_messenger$ Jobs"
+ mod_job_science_messenger_per_pop:0 "§G+1§! $job_science_messenger$ Job per $VALUE$ Pops"
+ mod_job_science_messenger_per_pop_short:0 "\n§G+1§! £mod_job_science_messenger_add£ per $VALUE$ £pop£"
+
  job_story_messenger:0 "Story Messenger"
  job_story_messenger_plural:0 "Story Messengers"
  job_story_messenger_desc:0 "Stories and tales let unrelated individuals become imagined community by condensation, inherit, record and guide its past, present and future."
- job_story_messenger_effect_desc:0 "£job_story_messenger£ $job_story_messenger_plural$生产£mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!、£society£ §Y$society_research$§!和£unity£ §Y$unity$§!"
+ job_story_messenger_effect_desc:0 "£job_story_messenger£ $job_story_messenger_plural$ produce £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, £society£ §Y$society_research$§! and £unity£ §Y$unity$§!"
  mod_job_story_messenger_add:0 "$job_story_messenger$ Jobs"
  mod_job_story_messenger_per_pop:0 "§G+1§! $job_story_messenger$ Job per $VALUE$ Pops"
  mod_job_story_messenger_per_pop_short:0 "\n§G+1§! £mod_job_story_messenger_add£ per $VALUE$ £pop£"
  
  ### 政府
  
- gov_story_directorate:0 "Story Directorate"
- gov_story_directorate_desc:0 "This government is a materialistic and xenophilic form of oligarchy, where a directorate of story creators and tellers supervises the government apparatus for the development and inherit of its civilization."
+ gov_science_forward_committee:0 "Science Forward Committee"
+ gov_science_forward_committee_desc:0 "This government is a materialistic and militaristic form of democracy, where science workers lead their people to supervise the government apparatus by consultation for the development and its civilization and spreading the spirit of science."
+ 
+ gov_science_forward_directorate:0 "Science Forward Directorate"
+ gov_science_forward_directorate_desc:0 "This government is a materialistic and militaristic form of oligarchy, where a directorate of  science workers supervises the government apparatus for the development of it's civilization and spreading the spirit of science."
  
  gov_story_committee:0 "Story Committee"
- gov_story_committee_desc:0 "This government is a materialistic and xenophilic form of democracy, where story creators and tellers lead their people to supervise the government apparatus by consultation for the development and inherit of its civilization."
- 
+ gov_story_committee_desc:0 "This government is a materialistic and xenophilic form of democracy, where story creators and tellers lead their people to supervise the government apparatus by consultation for the development and inherit of it's civilization."
+
+ gov_story_directorate:0 "Story Directorate"
+ gov_story_directorate_desc:0 "This government is a materialistic and xenophilic form of oligarchy, where a directorate of story creators and tellers supervises the government apparatus for the development and inherit of it's civilization."
+
  ### 公民性
  
+ civic_scientific_belief:0 "Scientific Belief"
+ civic_scientific_belief_desc:0 "Perhaps due to congenital, or maybe the reason of acquired meeting, in final, this civilization has developed a society that advocates the spirit of science and is willing to spread it."
+ civic_tooltip_scientific_belief_effects:0 "£building£ §YCapital Buildings§! replace £job_administrator£ §Y$job_administrator$§! Jobs with £job_science_messenger£ §Y$job_science_messenger_plural$§!\n§Y$planet_researchers$§! also produce §Y1§!£unity£$unity$"
+
  civic_story_messenger:0 "Story Messenger"
  civic_story_messenger_desc:0 "We have a mission, to blow stories and tales to everywhere of the universe, so that the sceneries shall be known, the miracles shall be acknowledged, and the past shall be remembered."
- civic_tooltip_story_messenger_effects:0 "£building£ §YCapital Buildings§! replace £job_administrator£ §Y$job_administrator$§! Jobs with £job_story_messenger£ §Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!, §Y$planet_entertainers$§!, §Y$planet_doctors$§!, §Y$planet_researchers$§!, etc also produce §Y1§!£society_research£$society_research$ and §Y0.5§!£unity£$unity$"
+ civic_tooltip_story_messenger_effects:0 "£building£ §YCapital Buildings§! replace £job_administrator£ §Y$job_administrator$§! Jobs with £job_story_messenger£ §Y$job_story_messenger_plural$§!\n§Y$planet_culture_workers$§!, §Y$planet_entertainers$§!, §Y$planet_researchers$§!, etc. also produce §Y1§!£society_research£$society_research$ and §Y0.5§!£unity£$unity$"
  
+ federation_acceptance_scientific_belief:0 "$civic_scientific_belief$"
  federation_acceptance_story_messenger:0 "$civic_story_messenger$"
+
+ civic_tooltip_idealist:0 "Is idealist"
 
  ### 外交修饰符
  
  opinion_both_idealists:0 "Both idealists"
  opinion_sinful_slaveholders:0 "Sinful Slaveholders"
  opinion_sinful_anti_sapient:0 "Sinful Anti-Sapient"
+ opinion_science_believer:0 "Science Believer"
  opinion_story_messenger:0 "Story messenger"
  opinion_bring_stories:0 "Bring stories"
  
  ### 个性
  
+ personality_science_forwarders:0 "Science forwarders"
+ personality_science_forwarders_desc:0 "Science forwarders regard the dissemination of the scientific spirit as the second priority beyond the development of civilization, and they will pass on materialism to other civilizations at all costs."
+
  personality_story_relaters:0 "Story relaters"
  personality_story_relaters_desc:0 "Story relaters think them own have a mission of spreading the light of stories, they are very pleasure to share stories and tales, whether in a narrow sense, or in a broad sense."
  
+ federation_acceptance_science_forwarders:0 "$personality_science_forwarders$"
+ federation_acceptance_science_forwarders_in_research_federation:0 "$personality_science_forwarders$ + $research_federation$"
+
  federation_acceptance_story_relaters:0 "$personality_story_relaters$"
  federation_acceptance_story_relaters_in_default_federation:0 "$personality_story_relaters$ + $default_federation$"
  federation_acceptance_story_relaters_in_research_federation:0 "$personality_story_relaters$ + $research_federation$"
  
  # 问候语
+ # TODO
+ 
+ SF_HOSTILE_GREETING_01:0 "Your values and choices are not grounded in logic, which is why we cannot have a constructive conversation about them."
+ SF_HOSTILE_GREETING_02:0 "Because of the evolutionary conditions of [From.Capital.GetName], [From.GetSpeciesAdj] brains are simply less developed. It's science. Look it up."
+ SF_HOSTILE_GREETING_03:0 "You invented your faith to fill empty minds. Your people will never feel the true euphoria of an enlightened intellect."
+ SF_HOSTILE_GREETING_04:0 "Your failure to critically examine your ideas is the hallmark of a society of simple-minded herd animals. We have nothing to learn from you."
+ SF_DOMINEERING_GREETING_01:0 "The poor state of development in your civilization is due to an inferior culture which discourages progress. It's a fact."
+ SF_NEUTRAL_GREETING_01:0 "Greetings, [From.GetSpeciesName]. Do you come with questions, or with answers?"
+ SF_NEUTRAL_GREETING_02:0 "Our goal is not power, but knowledge, although they can sometimes be the same."
+ SF_NEUTRAL_GREETING_03:0 "It may surprise you to hear that your beliefs are quite irrational. You had better get used to harsh truths if you want to converse with us."
+ SF_THREATENED_GREETING_01:0 "Whatever you're planning next, remember that we present no threat to you. We are content to discover new frontiers, not challenge yours."
+ SF_FRIENDLY_GREETING_01:0 "Together, we will unveil the secrets of the galaxy."
+ SF_FRIENDLY_GREETING_02:0 "The [From.GetSpeciesAdj] mind and the [Root.GetSpeciesAdj] mind complement each other. Our intellectual efforts will be greater than the sum of their parts."
+ SF_FRIENDLY_GREETING_03:0 "It's a joy to meet another curious and intellectual people. Too many prefer to let the mysteries found in the depths of space remain mysteries."
+ SF_FRIENDLY_GREETING_04:0 "The findings of the [Root.GetAllianceName] will represent the ultimate frontier of discoveries by sapient beings."
+ SF_WAR_GREETING_01:0 "It will save our archeologists a lot of trouble having detailed logs on how [From.GetHomeWorldName] was left in ruins."
+ SF_WAR_GREETING_02:0 "Our weapon of choice is our intellects, sharpened by reason and rationalism. Do you like your odds, [From.GetSpeciesNamePlural]?"
+ SF_WAR_GREETING_03:0 "Whatever figments of your imagination you are hoping to intervene in this conflict, please pray as much as you like. Clasped hands hold no weapons."
+
  SR_HOSTILE_GREETING_01:0 "Your values and choices are not grounded in logic, which is why we cannot have a constructive conversation about them."
  SR_HOSTILE_GREETING_02:0 "Because of the evolutionary conditions of [From.Capital.GetName], [From.GetSpeciesAdj] brains are simply less developed. It's science. Look it up."
  SR_HOSTILE_GREETING_03:0 "You invented your faith to fill empty minds. Your people will never feel the true euphoria of an enlightened intellect."

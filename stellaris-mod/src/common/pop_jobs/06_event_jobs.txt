@@ -382,6 +382,13 @@ dimensional_portal_researcher = {
 		produces = {
 			trigger = {
 				exists = owner
+				owner = { has_valid_civic = civic_scientific_belief }
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				exists = owner
 				owner = { has_valid_civic = civic_story_messenger }
 			}
 			society_research = 1
