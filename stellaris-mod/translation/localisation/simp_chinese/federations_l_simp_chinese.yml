@@ -92,7 +92,7 @@
  # Encountering Ruined Mega Shipyard
  feda.5.name:0 "$mega_shipyard_ruined$"
  feda.5.a.desc:2 "在广袤的[mega_shipyard_system.GetName]星系内躺着一座巨大的外星建筑。尽管它已经破败不堪，我们的科学家仍证实这一巨型结构实际上是几个造船船坞的组合体——一个§Y$mega_shipyard_3$§!。\n\n倘若我们获取了如何修复这雄伟的工业设施的知识，我们的生产能力将得到飞跃式提升。"
- feda.5.b.desc:3 "在广袤的[mega_shipyard_system.GetName]星系内躺着一座巨大的§Y$mega_shipyard_3$§结构——和我们的设计很相似。但是该巨型结构已经残破了，我们需要大量修复工作才能使之重新运转。"
+ feda.5.b.desc:3 "在广袤的[mega_shipyard_system.GetName]星系内躺着一座巨大的§Y$mega_shipyard_3$§!结构——和我们的设计很相似。但是该巨型结构已经残破了，我们需要大量修复工作才能使之重新运转。"
  feda.5.c.desc:0 "对周遭空间的快速扫描显示，该巨型结构在数百万年前遭受了某种严重的功率过载，这可能是某种大型能量风暴穿行星系所致。"
  feda.5.a:0 "想象一下我们拥有两座巨型船坞的情景！"
 
@@ -295,7 +295,7 @@
  FEDERATION_ENVOYS_DESC:0 "§E§H特使§!是联邦成员国派出的代表。他们通过努力工作保证联邦统一来提升§H联邦内聚度§!。§!"
  FEDERATION_LEVEL_PERKS_DESC:0 "§E等级$LEVEL$特典：§!"
  FEDERATION_LEVEL_PERK:0 "\t$PERK|Y$"
- FEDERATION_LEVEL_HAS_DECAYED:0 "§R我们目前的经验值不足以维持当前等级。我们将于$DAYS|Y日后失去特典加成。§!"
+ FEDERATION_LEVEL_HAS_DECAYED:0 "§R我们目前的经验值不足以维持当前等级。我们将于$DAYS|Y$日后失去特典加成。§!"
  FEDERATION_LAW_SUPPORTERS:0 "§E支持者：§!"
  FEDERATION_LAW_SUPPORTER:1 "§G$NAME$：$VALUE$§!"
  FEDERATION_LAW_OPPOSITION:0 "§E反对者：§!"

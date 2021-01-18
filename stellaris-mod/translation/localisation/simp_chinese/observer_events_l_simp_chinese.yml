@@ -16,5 +16,5 @@
  observer.70.name:0 "视界信号"
  observer.70.desc:0 "§H[From.Owner.GetName]§!的科学家们捕获了一个神秘的信号，似乎来自于一个黑洞的中心……"
  observer.71.name:0 "潜时之虫"
- observer.71.desc:0 "潜时之虫把[From.Owner.GetName]§!的母星系变成了某个……不同的样子。"
- observer.72.desc:0 "潜时之虫在[From.Owner.GetName]§!的母星系里展现了它自己。战斗开始了……"
+ observer.71.desc:0 "潜时之虫把§H[From.Owner.GetName]§!的母星系变成了某个……不同的样子。"
+ observer.72.desc:0 "潜时之虫在§H[From.Owner.GetName]§!的母星系里展现了它自己。战斗开始了……"

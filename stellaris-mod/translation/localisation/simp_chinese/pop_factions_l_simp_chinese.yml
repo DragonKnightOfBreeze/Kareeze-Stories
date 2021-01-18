@@ -42,7 +42,7 @@
  SUPREMACIST_RULER_NOT_SAME_SPECIES:0 "[Root.Owner.GetRulerTitle]是外星异种"
  SUPREMACIST_RULER_NOT_SAME_SPECIES_DESC:0 "[Root.GetName]希望我们的统治者是他们的种族，同时任何非[Root.Owner.GetSpeciesName]担任[Root.Owner.GetRulerTitle]都会激怒他们。"
  SUPREMACIST_UNRESTRICTED_STUDY:0 "侵略性外星研究"
- SUPREMACIST_UNRESTRICTED_STUDY_DESC:0 "批准不受限土著研究§!，最大化利用异种原始文明可取悦[Root.GetName]。"
+ SUPREMACIST_UNRESTRICTED_STUDY_DESC:0 "批准不受限土著研究，最大化利用异种原始文明可取悦[Root.GetName]。"
  SUPREMACIST_NO_UNRESTRICTED_STUDY:0 "$SUPREMACIST_UNRESTRICTED_STUDY$"
  SUPREMACIST_SLAVERY_ALLOWED:0 "奴隶的潜力"
  SUPREMACIST_SLAVERY_ALLOWED_DESC:0 "[Root.GetName]不相信某些人比别人更有价值，只是他们更适合某些任务。禁止§Y奴隶制§!会得罪他们。"

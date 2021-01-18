@@ -2181,7 +2181,7 @@
  MECH_OFFER_FEDERATION_ASSOCIATION_STATUS_REFUSE:0 "请求被拒绝。[Root.GetAdj]超级智能不需要加入§Y[From.GetAllianceName]§!。"
  MECH_REVOKE_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "您打算撤销[Root.GetName]在§Y[From.GetAllianceName]§!中的联邦成员资格么？"
  MECH_REVOKE_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "[From.GetName]想要通知您您的§Y[From.GetAllianceName]§!联邦成员资格已经无效了。您与[Root.GetAdj]成员国的利益并不一致，无法继续保持成员关系。"
- MECH_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "您已撤销[Root.GetName]在[From.GetAllianceName]§!的联邦成员资格。[Root.GetName]对于合作的终止表示遗憾。"
+ MECH_REVOKE_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "您已撤销[Root.GetName]在§Y[From.GetAllianceName]§!的联邦成员资格。[Root.GetName]对于合作的终止表示遗憾。"
  MECH_ASK_FEDERATION_ASSOCIATION_STATUS_SELECT:0 "[From.GetSpeciesNamePlural]想申请成为§Y[Root.GetAllianceName]§!的联邦成员？"
  MECH_ASK_FEDERATION_ASSOCIATION_STATUS_PROPOSE:0 "向您问好，[Root.GetSpeciesName]。我们一直在观察§Y[Root.GetAllianceName]§!，发现了它的好处。我们有一个问题：你们是否考虑吸纳[From.GetName]的加入？"
  MECH_ASK_FEDERATION_ASSOCIATION_STATUS_ACCEPT:0 "您的申请已经通过，[From.GetSpeciesName]。您已经成为§Y[Root.GetAllianceName]§!的联邦成员。"

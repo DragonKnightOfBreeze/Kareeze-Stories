@@ -6680,7 +6680,7 @@
  SETTINGS_REFRESH_RATE_INFO:0 "使用全屏幕模式时，§H刷新率§!决定了显示器的每秒重绘次数。在窗口化或无边框模式中，将采取桌面的刷新率。"
  SETTINGS_MULTISAMPLE_INFO:0 "§H多重采样§!会在渲染时平滑锯齿边缘。设置得越高，占用资源越多，但也会带来更好的画面表现。使用较老的硬件时，将这个值设为0来提高性能。"
  SETTINGS_GUISCALE:1 "UI缩放（试验项）"
- SETTINGS_GUISCALE_INFO:1 "此特质处于试验阶段，设置为非1.0x时可能发生问题。\n§UI缩放§!最大值取决于你的§H分辨率§!。分辨率越高，§HUI缩放§!就可以调的更高。"
+ SETTINGS_GUISCALE_INFO:1 "此特质处于试验阶段，设置为非1.0x时可能发生问题。\n§HUI缩放§!最大值取决于你的§H分辨率§!。分辨率越高，§HUI缩放§!就可以调的更高。"
  SETTINGS_BLOOM:0 "全屏泛光质量"
  SETTINGS_BLOOM_INFO:0 "更高的§H全屏泛光质量§!会牺牲少量性能，提供更广泛、更平滑的泛光效果。"
  SETTINGS_LENS_FLARE:0 "镜头光晕"

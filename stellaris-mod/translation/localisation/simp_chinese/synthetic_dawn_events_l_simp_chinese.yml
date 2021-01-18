@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 
  syndaw.1.name:0 "[From.GetName]已同化"
- syndaw.1.desc:0 "一股新思想涌入了网络。尽管最初存在差别，但他们很快便依据我们自我认知的中位数归一化了。\n\n我们从§Y[From.GetNamePlural]§中吸收到了一些知识和能力!"
+ syndaw.1.desc:0 "一股新思想涌入了网络。尽管最初存在差别，但他们很快便依据我们自我认知的中位数归一化了。\n\n我们从§Y[From.GetNamePlural]§!中吸收到了一些知识和能力!"
  syndaw.1.a.tooltip:0 "每同化一个人口便获得一些§Y研究点数§!"
  syndaw.2.name:0 "[Root.GetName]已整合"
  syndaw.2.desc:0 "我们将[Root.GetName]的合成单元集成入了我们的网络。"

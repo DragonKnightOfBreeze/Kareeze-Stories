@@ -2532,7 +2532,7 @@
  KET_OFFER_TRADE_DEAL_PROPOSE_01:0 "我们有很多商品，很多东西。金属、电缆、情报。[Root.GetName]愿意与我们交易吗？"
  KET_OFFER_TRADE_DEAL_ACCEPT_01:0 "§H克嘶！§!一笔好生意，一次不错的交易。"
  KET_OFFER_TRADE_DEAL_REFUSE_01:0 "这是笔烂生意，令人不满，§H克嘶！§!"
- KET_MAKE_RIVAL_01:0 "你想让你们族群与深幽的凯灵心智相斗，§克嘶？§!你会后悔的。"
+ KET_MAKE_RIVAL_01:0 "你想让你们族群与深幽的凯灵心智相斗，§H克嘶？§!你会后悔的。"
  KET_MAKE_RIVAL_PROPOSE_01:0 "你们族群里充满了美味的东西……金属、破烂和电缆，垃圾和珍宝！我们渴望它们。我们一定要得到它们。有朝一日，我们将把它们从你们手中夺走。"
  KET_MAKE_RIVAL_ACCEPT_01:0 "很好。现在我们不必再后悔趁你们不备时，从你们那儿偷走东西了！§H克嘶 克嘶 克嘶！§!"
  KET_END_RIVALRY_01:0 "不再狂妄自大了吗，[From.GetSpeciesName]？[From.GetName]希望和解？"

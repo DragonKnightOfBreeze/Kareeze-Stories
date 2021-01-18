@@ -1687,8 +1687,8 @@
 
  fallen_machine_empire_happy_tooltip:0 "§H[FallenEmpireTaskOrigin.GetName]§!可能对我们完成承诺的行为持积极态度。"
  fallen_machine_empire_unhappy_tooltip:0 "§H[FallenEmpireTaskOrigin.GetName]§!可能对我们决绝要求的行为持消极态度。"
- fallen_machine_empire_happy_task_tooltip:0 "H[FallenEmpireTaskOrigin.GetName]§!可能对我们任务成功持积极态度。"
- fallen_machine_empire_unhappy_task_tooltip:0 "H[FallenEmpireTaskOrigin.GetName]§!可能对我们任务失败持消极态度。"
+ fallen_machine_empire_happy_task_tooltip:0 "§H[FallenEmpireTaskOrigin.GetName]§!可能对我们任务成功持积极态度。"
+ fallen_machine_empire_unhappy_task_tooltip:0 "§H[FallenEmpireTaskOrigin.GetName]§!可能对我们任务失败持消极态度。"
  fallen_machine_empire_angry_task_tooltip:0 "§H[FallenEmpireTaskOrigin.GetName]§!对我们任务失败感到非常不满。"
 
  opinion_angered_fallen_machine_empire:0 "激怒堕落机械帝国"
