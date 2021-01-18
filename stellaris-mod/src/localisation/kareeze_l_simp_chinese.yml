@@ -173,8 +173,23 @@
  federation_acceptance_story_relaters_in_default_federation:0 "$personality_story_relaters$ + $default_federation$"
  federation_acceptance_story_relaters_in_research_federation:0 "$personality_story_relaters$ + $research_federation$"
 
+ ### 传统
 
- # 问候语
+ tr_prosperity_adopt_science_forwarders:0 "繁荣传统"
+ tr_prosperity_adopt_science_forwarders_desc:0 "$tradition_prosperity_desc$\n\n$tr_prosperity_adopt_science_forwarders_effect$\n\n$tr_prosperity_finish_science_forwarders_effect$"
+ tr_prosperity_adopt_science_forwarders_effect:7 "§E$TRADITIONS_ADOPT$：§!\n§Y$mod_station_gatherers_produces_mult$§!增加§G10%§!。"
+ 
+ tr_prosperity_adopt_story_relaters:0 "繁荣传统"
+ tr_prosperity_adopt_story_relaters_desc:0 "$tradition_prosperity_desc$\n\n$tr_prosperity_adopt_story_relaters_effect$\n\n$tr_prosperity_finish_story_relaters_effect$"
+ tr_prosperity_adopt_story_relaters_effect:7 "§E$TRADITIONS_ADOPT$：§!\n§Y$mod_station_gatherers_produces_mult$§!增加§G10%§!。"
+ 
+ tr_prosperity_finish_science_forwarders:0 "$tr_prosperity_finish$"
+ tr_prosperity_finish_science_forwarders_effect:6 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_prosperity_adopt$会使我们的行星每§Y50§!£pop£人口增加§Y1§!个£job_science_messenger£§Y$job_science_messenger$职位§!。"
+ 
+ tr_prosperity_finish_story_relaters:0 "$tr_prosperity_finish$"
+ tr_prosperity_finish_story_relaters_effect:6 "§E$TRADITIONS_FINISH$：§!\n树立全部$tr_prosperity_adopt$会使我们的行星每§Y50§!£pop£人口增加§Y1§!个£job_story_messenger£§Y$job_story_messenger$职位§!。"
+
+ ### 问候语
  # TODO
  
  SF_HOSTILE_GREETING_01:0 "你们的价值观和选择完全不合逻辑，我们也根本无法展开有建设性的谈话。"

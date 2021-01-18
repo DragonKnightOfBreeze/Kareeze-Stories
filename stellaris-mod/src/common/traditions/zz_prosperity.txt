@@ -1,0 +1,197 @@
+tr_prosperity_adopt = {
+	modifier = {
+		station_gatherers_produces_mult = 0.10
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_adopt_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			station_gatherers_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_adopt_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			station_gatherers_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_prosperity_adopt_science_forwarders
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			has_valid_civic = civic_scientific_belief
+		}
+		modifier = {
+			station_gatherers_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_prosperity_adopt_story_relaters
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			has_valid_civic = civic_story_messenger
+		}
+		modifier = {
+			station_gatherers_produces_mult = 0.10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_expansion_adopt
+					NOT = { has_tradition = tr_expansion_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_prosperity_finish = {
+	modifier = {
+		ascension_perks_add = 1
+		job_merchant_per_pop = 0.02
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_finish_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		modifier = {
+			job_maintenance_drone_per_pop = 0.05
+			ascension_perks_add = 1
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_finish_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		modifier = {
+			job_synapse_drone_per_pop = 0.05
+			ascension_perks_add = 1
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_prosperity_finish_science_forwarders
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			has_valid_civic = civic_scientific_belief
+		}
+		
+		modifier = {
+			ascension_perks_add = 1
+			job_science_messenger_per_pop = 0.02
+		}
+		
+		weight = {
+			factor = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_prosperity_finish_story_relaters
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			has_valid_civic = civic_story_messenger
+		}
+		
+		modifier = {
+			ascension_perks_add = 1
+			job_story_messenger_per_pop = 0.02
+		}
+		
+		weight = {
+			factor = 1
+		}
+	}
+}
